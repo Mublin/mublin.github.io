@@ -32,6 +32,11 @@ function pageTransitions(){
             })
             const element = document.getElementById(id);
             element.classList.add('active')
+            // so after we get the Id from the the data-id using e.target.dataset.id
+            //it return a VALUE n we put it in a variable, so we loop in the buttons we click n
+            //we remove the classActive n add it to the e.target
+            //so  the data-id and the id VALUE must be the-same in order to retrieve it section
+            // we remove after looping and add to the section that matches the up line
         }
     })
     mode.addEventListener('click', function() {
