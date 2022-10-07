@@ -218,7 +218,7 @@ p{
 
 @media only screen and (max-width: 900px) {
     header{
-        padding: 0;
+        padding-bottom: 5rem;
     }
     header .right-header{
         padding: 1rem !important;
