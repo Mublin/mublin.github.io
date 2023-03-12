@@ -536,11 +536,15 @@ p{
 .portfolios{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.4rem;
+    grid-gap: 1rem;
+}
+.portfolios .items{
+    max-width: 300px;
 }
 .portfolios .portfolio-item{
     position: relative;
     overflow: hidden;
+    max-width: 295px;
 }
 .portfolios .portfolio-item img{
     width: 100%;
