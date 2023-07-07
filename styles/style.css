@@ -218,7 +218,7 @@ p{
 
 @media only screen and (max-width: 900px) {
     header{
-        padding-bottom: 5rem;
+        padding-bottom: 2rem;
     }
     header .right-header{
         padding: 1rem !important;
@@ -243,10 +243,17 @@ p{
     }
     .header-content{
         grid-template-columns: 1fr;
-        padding-bottom: 3rem;
     }
     .left-header .h-shape{
         display: none;
+    }
+    .left-header .image{
+        border-radius: var(--br-sm-2);
+        height: 90%;
+        width: 100%;
+        margin: 0 2rem;
+        background-color: var(--color-black);
+        transition: all .4s ease-in-out;
     }
     .right-header{
         grid-row: 1;
@@ -257,8 +264,12 @@ p{
         font-size: 1.7rem;
     }
     .header-content .left-header{
-        margin: 0 auto;
-        width: 90%;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
     }
     .btn-container{
         width: 100%;
@@ -291,8 +302,11 @@ p{
     .i-c-2 input{
         margin-top: 1rem !important;
     }
+    section{
+        padding: 1.5rem !important;
+    }
     .section{
-        padding: 4rem 2rem !important;
+        height: 100%;
     }
     main{
         margin-bottom: 2rem;
@@ -532,6 +546,7 @@ p{
 .port-text{
     padding: 1.5rem 0;
     text-align: center;
+    min-width: 240px;
 }
 .portfolios{
     display: grid;
@@ -540,6 +555,7 @@ p{
 }
 .portfolios .items{
     max-width: 300px;
+    min-width: 250px;
 }
 .portfolios .portfolio-item{
     position: relative;
