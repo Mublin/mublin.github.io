@@ -462,28 +462,34 @@ p{
     width: 90%;
 }
 .progress .css{
-    width: 60%;
+    width: 80%;
 }
 .progress .js{
-    width: 75%;
+    width: 90%;
 }
 .progress .comm{
     width: 89%;
 }
 .progress .react{
-    width: 80%;
+    width: 90%;
 }
 .progress .node{
-    width: 60%;
+    width: 80%;
 }
 .progress .mern{
-    width: 60%;
+    width: 80%;
 }
 .progress .mysql{
-    width: 55%;
+    width: 75%;
 }
 .progress .team{
     width: 85%;
+}
+.progress .python{
+    width: 80%;
+}
+.progress .native{
+    width: 70%;
 }
 /* Timeline */
 .timeline{
@@ -623,6 +629,11 @@ p{
 /* Contact */
 .contact-content-con{
     display: flex;
+}
+@media only screen and (max-width: 1000px) {
+    .right-contact{
+        margin-bottom: 3.4rem !important;
+    }
 }
 .left-contact{
     flex: 2;
