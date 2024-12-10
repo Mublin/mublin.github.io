@@ -1096,3 +1096,9 @@ section .container {
     transform: translateX(-50%);
   }
 }
+.lets-hide{
+  display: hidden;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
