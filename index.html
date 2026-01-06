@@ -306,9 +306,10 @@
           <div class="portfolio-wrap">
             <img src="assets/img/project/cityofnoor.png" class="img-fluid" alt="City of Noor">
             <div class="portfolio-info">
-              <p>Modern e-commerce platform built with Next.js 15, TypeScript, and Prisma. Features include user authentication, product management, cart functionality, and secure payments.</p>
+              <p>Real estate company website built with Next.js 15, TypeScript, and Prisma. Features property listings, virtual tours, and client management system.</p>
               <div class="portfolio-links">
-                <a href="https://cityofnoor.com" target="_blank" class="venobox" title="View Live Site"><i class="bx bx-link"></i></a>
+                <a href="https://cityofnoor.com" target="_blank" title="View Live Site"><i class="bx bx-link"></i></a>
+                <a href="#" onclick="openIframe(`https://cityofnoor.com`, `City of Noor`)" title="Preview Site"><i class="bx bx-show"></i></a>
               </div>
             </div>
           </div>
@@ -319,9 +320,10 @@
           <div class="portfolio-wrap">
             <img src="assets/img/project/assalam.png" class="img-fluid" alt="Rawad Al Salam">
             <div class="portfolio-info">
-              <p>Corporate website built with Next.js App Router and NestJS. Features multi-language support, dynamic content management, and responsive design.</p>
+              <p>Import and distribution company specializing in finest halal meat from Australia and New Zealand to Oman and GCC market. Built with Next.js and NestJS.</p>
               <div class="portfolio-links">
-                <a href="https://www.rawadalsalam.com" target="_blank" class="venobox" title="View Live Site"><i class="bx bx-link"></i></a>
+                <a href="https://www.rawadalsalam.com" target="_blank" title="View Live Site"><i class="bx bx-link"></i></a>
+                <a href="#" onclick="openIframe(`https://www.rawadalsalam.com`, `Rawad Al Salam`)" title="Preview Site"><i class="bx bx-show"></i></a>
               </div>
             </div>
           </div>
@@ -332,9 +334,10 @@
           <div class="portfolio-wrap">
             <img src="assets/img/project/itkan.png" class="img-fluid" alt="ITKAN Institute">
             <div class="portfolio-info">
-              <p>Educational institute website developed using Next.js 13 with app router and TypeScript. Includes course management, student portal, and interactive learning features.</p>
+              <p>Non-profit robotics team website developed using Next.js 13 with TypeScript. Features team management, project showcases, and educational resources.</p>
               <div class="portfolio-links">
-                <a href="https://iktan.vercel.app" target="_blank" class="venobox" title="View Live Site"><i class="bx bx-link"></i></a>
+                <a href="https://itkan.one" target="_blank" title="View Live Site"><i class="bx bx-link"></i></a>
+                <a href="#" onclick="openIframe(`https://itkan.one`, `ITKAN Institute`)" title="Preview Site"><i class="bx bx-show"></i></a>
               </div>
             </div>
           </div>
@@ -345,9 +348,10 @@
           <div class="portfolio-wrap">
             <img src="assets/img/project/the-chop-nation.png" class="img-fluid" alt="The Chop Nation">
             <div class="portfolio-info">
-              <p>Restaurant website built with Next.js and NestJS. Features online ordering, menu management, and reservation system with PostgreSQL database.</p>
+              <p>Japanese restaurant perfect for events. Built with Next.js and NestJS featuring event booking, menu management, and reservation system.</p>
               <div class="portfolio-links">
-                <a href="https://thechopnation.com" target="_blank" class="venobox" title="View Live Site"><i class="bx bx-link"></i></a>
+                <a href="https://thechopnation.com" target="_blank" title="View Live Site"><i class="bx bx-link"></i></a>
+                <a href="#" onclick="openIframe(`https://thechopnation.com`, `The Chop Nation`)" title="Preview Site"><i class="bx bx-show"></i></a>
               </div>
             </div>
           </div>
@@ -358,9 +362,24 @@
           <div class="portfolio-wrap">
             <img src="assets/img/project/my-halal-hibachi.png" class="img-fluid" alt="My Halal Hibachi">
             <div class="portfolio-info">
-              <p>Restaurant website developed with Vite React TypeScript and Prisma. Includes real-time order tracking, menu customization, and payment integration.</p>
+              <p>Japanese restaurant serving halal food and meat. Built with Vite React TypeScript featuring online ordering, halal menu, and delivery tracking.</p>
               <div class="portfolio-links">
-                <a href="https://myhalalhibachi.com" target="_blank" class="venobox" title="View Live Site"><i class="bx bx-link"></i></a>
+                <a href="https://myhalalhibachi.com" target="_blank" title="View Live Site"><i class="bx bx-link"></i></a>
+                <a href="#" onclick="openIframe(`https://myhalalhibachi.com`, `My Halal Hibachi`)" title="Preview Site"><i class="bx bx-show"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <center><h4>Ctrl-F2</h4></center>
+          <div class="portfolio-wrap">
+            <img src="assets/img/project/ctrlf2.png" class="img-fluid" alt="Ctrl-F2">
+            <div class="portfolio-info">
+              <p>Advanced web development platform built with cutting-edge technologies. Features modern UI/UX design, real-time collaboration tools, and comprehensive development solutions.</p>
+              <div class="portfolio-links">
+                <a href="https://www.ctrlf2.com" target="_blank" title="View Live Site"><i class="bx bx-link"></i></a>
+                <a href="#" onclick="openIframe(`https://www.ctrlf2.com`, `Ctrl-F2`)" title="Preview Site"><i class="bx bx-show"></i></a>
               </div>
             </div>
           </div>
@@ -594,6 +613,17 @@
 
   <!-- End Contact Section -->
 
+  <!-- Iframe Modal -->
+  <div id="iframeModal" class="iframe-modal">
+    <div class="iframe-modal-content">
+      <div class="iframe-modal-header">
+        <h3 id="iframeTitle">Website Preview</h3>
+        <span class="iframe-close" onclick="closeIframe()">&times;</span>
+      </div>
+      <iframe id="websiteIframe" src="" frameborder="0"></iframe>
+    </div>
+  </div>
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -616,6 +646,93 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Iframe Modal JavaScript -->
+  <script>
+    function openIframe(url, title) {
+      const iframe = document.getElementById('websiteIframe');
+      const modal = document.getElementById('iframeModal');
+      const titleElement = document.getElementById('iframeTitle');
+      
+      // Set title and show modal
+      titleElement.textContent = title + ' - Live Preview';
+      modal.style.display = 'block';
+      document.body.style.overflow = 'hidden';
+      
+      // Try to load the iframe
+      iframe.src = url;
+      
+      // Handle iframe load errors
+      iframe.onload = function() {
+        // Check if iframe loaded successfully
+        try {
+          iframe.contentDocument;
+        } catch (e) {
+          showFallback(url, title);
+        }
+      };
+      
+      iframe.onerror = function() {
+        showFallback(url, title);
+      };
+      
+      // Timeout fallback
+      setTimeout(function() {
+        if (!iframe.contentDocument || iframe.contentDocument.body.innerHTML === '') {
+          showFallback(url, title);
+        }
+      }, 3000);
+    }
+    
+    function showFallback(url, title) {
+      const iframe = document.getElementById('websiteIframe');
+      iframe.style.display = 'none';
+      
+      const fallbackHtml = `
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; background: #09203a; color: white; text-align: center; padding: 40px;">
+          <i class="bx bx-error-circle" style="font-size: 64px; color: #ffc107; margin-bottom: 20px;"></i>
+          <h3 style="margin-bottom: 15px;">Preview Not Available</h3>
+          <p style="margin-bottom: 25px; max-width: 500px;">This website cannot be previewed due to security restrictions. Click the button below to visit the site directly.</p>
+          <a href="${url}" target="_blank" style="background: #1c7d32; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: 600; transition: background 0.3s;" onmouseover="this.style.background='#15bb62'" onmouseout="this.style.background='#1c7d32'">Visit ${title} →</a>
+        </div>
+      `;
+      
+      const fallbackDiv = document.createElement('div');
+      fallbackDiv.innerHTML = fallbackHtml;
+      fallbackDiv.style.height = 'calc(100% - 60px)';
+      
+      iframe.parentNode.appendChild(fallbackDiv);
+    }
+
+    function closeIframe() {
+      const modal = document.getElementById('iframeModal');
+      const iframe = document.getElementById('websiteIframe');
+      
+      modal.style.display = 'none';
+      iframe.src = '';
+      iframe.style.display = 'block';
+      document.body.style.overflow = 'auto';
+      
+      // Remove any fallback divs
+      const fallbacks = modal.querySelectorAll('div:not(.iframe-modal-content):not(.iframe-modal-header)');
+      fallbacks.forEach(div => div.remove());
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function(event) {
+      const modal = document.getElementById('iframeModal');
+      if (event.target === modal) {
+        closeIframe();
+      }
+    }
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeIframe();
+      }
+    });
+  </script>
 
 </body>
 
